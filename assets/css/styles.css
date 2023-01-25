@@ -16,9 +16,13 @@ html {
 /***************** REUSABLE CSS ***********
 *********************************************/
 
-.header-ctn, main, footer {
+.header-ctn, main, .footer-ctn {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+header, footer {
+    color: #fffaf7;
 }
 
 a {
@@ -34,6 +38,12 @@ ul li {
 .header-ctn .icon-ctn i {
     padding: 10px 5px;
     margin: 10px 0;
+}
+
+.header-ctn .navbar ul li,
+.header-ctn .icon-ctn i,
+.footer-ctn .legal-ctn .legal-link,
+.footer-ctn .socials h5 {
     font-size: 1.2rem;
 }
 
@@ -68,13 +78,17 @@ ul li {
     margin-top: 2px;
 }
 
+.footer-ctn .legal-ctn .legal-link,
+.footer-ctn .socials  .social-icons  a  i  {
+    margin-right: 5px;
+}
+
 
 /*********************** HEADER ***************
 *************************************************/
 
 header {
     background-color: #ff6900;
-    color: #fffaf7;
     position: fixed;
     top: 0;
     left: 0;
@@ -100,7 +114,8 @@ header {
 *************************************************/
 
 main {
-    padding: 100px 0;
+    margin-top: 50px;
+    padding: 60px 0;
 }
 
 .card-ctn {
@@ -115,6 +130,15 @@ main {
     position: relative;
 }
 
+.card-ctn .card .card-top {
+    position: relative;
+}
+
+
+.card-ctn .card:hover {
+    cursor: pointer;
+}
+
 .hidden {
     display: none;
     position: absolute;
@@ -122,20 +146,10 @@ main {
     left: 0;
 }
 
-.card-ctn .card:hover {
-    cursor: pointer;
-}
-
-.card-ctn .card .card-top:hover .hidden {
+.card .card-top:hover .hidden {
     cursor: pointer;
     display: inline;
 }
-
-
-.card-ctn .card .card-top {
-    position: relative;
-}
-
 .card .card-top .heart {
     top: 10px;
     right: 0;
@@ -188,6 +202,33 @@ main {
 
 /*********************** FOOTER***************
 *************************************************/
+
+footer {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-ctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-ctn .legal-ctn h4 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.footer-ctn .socials h5 {
+    margin-bottom: 8px;
+}
+
+.socials  .social-icons  a  i {
+    font-size: 1.6rem;
+}
+
+
 
 
 
