@@ -16,3 +16,60 @@ html {
 /***************** REUSABLE CSS ***********
 *********************************************/
 
+.header-ctn, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.header-ctn .navbar ul li,
+.header-ctn .icon-ctn i {
+    padding: 10px 5px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.header-ctn .navbar ul li a:hover,
+.header-ctn .icon-ctn a:hover {
+    cursor: pointer;
+    color: #0059ff;
+    transition: ease .40s;
+}
+
+
+/*********************** HEADER ***************
+*************************************************/
+
+header {
+    background-color: #ff6900;
+    color: #fffaf7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 400;
+}
+
+.header-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boolean-logo {
+    width: 100px;
+}
+
+.header-ctn .navbar ul {
+    display: flex;
+}
+
+
