@@ -44,6 +44,30 @@ ul li {
     transition: ease .40s;
 }
 
+.card-ctn .card .card-top .card-pic, 
+.card-ctn .card .card-bot {
+    width: 100%;
+}
+
+.card .card-top .heart,
+.card .card-top .discount,
+.card .card-top .Eco {
+    position: absolute;
+}
+
+.card .card-top .discount,
+.card .card-top .Eco {
+    color: #fff;
+    bottom: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card .card-bot h3,
+.card .card-bot .price {
+    margin-top: 2px;
+}
+
 
 /*********************** HEADER ***************
 *************************************************/
@@ -71,5 +95,106 @@ header {
 .header-ctn .navbar ul {
     display: flex;
 }
+
+/*********************** MAIN ***************
+*************************************************/
+
+main {
+    padding: 100px 0;
+}
+
+.card-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-ctn .card {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-ctn .card:hover {
+    cursor: pointer;
+}
+
+.card-ctn .card .card-top:hover .hidden {
+    cursor: pointer;
+    display: inline;
+}
+
+
+.card-ctn .card .card-top {
+    position: relative;
+}
+
+.card .card-top .heart {
+    top: 10px;
+    right: 0;
+    font-size: 1.6rem;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.card .card-top .heart:hover {
+    color: red;
+}
+
+.card .card-top .discount {
+    left: 0;
+    background-color: #ff0000;
+    padding: 6px 12px;
+}
+
+.card .card-top .Eco {
+    left: 55px;
+    background-color: #008000;
+    padding: 6px 14px;
+}
+
+.card .card-bot .brand {
+    font-size: 1.4rem;
+}
+
+.card .card-bot h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card .card-bot .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.card .card-bot .crossed-price {
+    font-weight: normal;
+    text-decoration: line-through;
+    margin-left: 5px
+}
+
+.card:nth-of-type(6) .card-top .Eco {
+    left: 0;
+    background-color: #008000;
+    padding: 6px 14px;
+}
+
+/*********************** FOOTER***************
+*************************************************/
+
+
+
+
+
+
+
+
 
 
