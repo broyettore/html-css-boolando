@@ -12,7 +12,6 @@ html {
     font-size: 62.5%;
 }
 
-
 /***************** REUSABLE CSS ***********
 *********************************************/
 
@@ -32,6 +31,11 @@ a {
 
 ul li {
     list-style-type: none;
+}
+
+.header-ctn .navbar,
+.header-ctn .icon-ctn {
+    width: 20%;
 }
 
 .header-ctn .navbar ul li,
@@ -102,12 +106,16 @@ header {
     justify-content: space-between;
 }
 
-.boolean-logo {
+.header-ctn .logo-ctn .boolean-logo {
     width: 100px;
 }
 
 .header-ctn .navbar ul {
     display: flex;
+}
+
+.header-ctn .icon-ctn {
+    text-align: right;
 }
 
 /*********************** MAIN ***************
@@ -134,7 +142,6 @@ main {
     position: relative;
 }
 
-
 .card-ctn .card:hover {
     cursor: pointer;
 }
@@ -150,6 +157,7 @@ main {
     cursor: pointer;
     display: inline;
 }
+
 .card .card-top .heart {
     top: 10px;
     right: 0;
