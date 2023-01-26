@@ -129,7 +129,6 @@ main {
 .card-ctn {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 .card-ctn .card {
